@@ -1,0 +1,275 @@
+\clearpage
+\section{Chapter Two}
+\exercise %2.1
+Write a Boolean equation in sum-of-products canonical form
+for each of the truth tables.
+
+\begin{tasks}(3)
+\task
+\begin{tabular}{cc|c}
+	A & B & Y\\
+	\hline
+	0 & 0 & 1\\
+	0 & 1 & 0\\
+	1 & 0 & 1\\
+	1 & 1 & 1
+\end{tabular}
+\task
+\begin{tabular}{ccc|c}
+	A & B & C & Y\\
+	\hline
+	0 & 0 & 0 & 1\\
+	0 & 0 & 1 & 0\\
+	0 & 1 & 0 & 0\\
+	0 & 1 & 1 & 0\\
+	1 & 0 & 0 & 0\\
+	1 & 0 & 1 & 0\\
+	1 & 1 & 0 & 0\\
+	1 & 1 & 1 & 1
+\end{tabular}
+\task
+\begin{tabular}{ccc|c}
+	A & B & C & Y\\
+	\hline
+	0&0&0&1\\
+	0&0&1&0\\
+	0&1&0&1\\
+	0&1&1&0\\
+	1&0&0&1\\
+	1&0&1&1\\
+	1&1&0&0\\
+	1&1&1&1
+\end{tabular}
+\task
+\begin{tabular}{cccc|c}
+	A & B & C & D & Y\\
+	\hline
+	0&0&0&0&1\\
+	0&0&0&1&1\\
+	0&0&1&0&1\\
+	0&0&1&1&1\\
+	0&1&0&0&0\\
+	0&1&0&1&0\\
+	0&1&1&0&0\\
+	0&1&1&1&0\\
+	1&0&0&0&1\\
+	1&0&0&1&0\\
+	1&0&1&0&1\\
+	1&0&1&1&0\\
+	1&1&0&0&0\\
+	1&1&0&1&0\\
+	1&1&1&0&1\\
+	1&1&1&1&0
+\end{tabular}
+\task
+\begin{tabular}{cccc|c}
+	A & B & C & D & Y\\
+	\hline
+	0&0&0&0&1\\
+	0&0&0&1&0\\
+	0&0&1&0&0\\
+	0&0&1&1&1\\
+	0&1&0&0&0\\
+	0&1&0&1&1\\
+	0&1&1&0&1\\
+	0&1&1&1&0\\
+	1&0&0&0&0\\
+	1&0&0&1&1\\
+	1&0&1&0&1\\
+	1&0&1&1&0\\
+	1&1&0&0&1\\
+	1&1&0&1&0\\
+	1&1&1&0&0\\
+	1&1&1&1&1
+\end{tabular}
+\end{tasks}
+
+\solution
+\begin{enumerate}[label=(\alph*)]
+	\item $Y=\overline{AB}+\overline{A}B+AB$
+	\item $Y=\overline{ABC}+ABC$
+	\item $Y=\overline{ABC}+\overline{A}B\overline{C}+
+	A\overline{B}\overline{C}+A\overline{B}C+ABC$
+	\item $Y=\overline{ABCD}+\overline{ABC}D+\overline{AB}C\overline{D}+\overline{AB}CD
+	+A\overline{BCD}+A\overline{B}C\overline{D}+ABC\overline{D}$
+	\item $Y=\overline{ABCD}+\overline{AB}CD+\overline{A}B\overline{C}D+
+	\overline{A}BC\overline{D}+A\overline{BC}D+A\overline{B}C\overline{D}
+	+AB\overline{CD}+ABCD$
+\end{enumerate}	
+
+\clearpage
+\exercise %2.2
+Write a Boolean equation in sum-of-products canonical form
+for each of the truth tables.
+
+\begin{tasks}(3)
+\task
+\begin{tabular}{cc|c}
+	A & B & Y\\
+	\hline
+	0 & 0 & 0\\
+	0 & 1 & 1\\
+	1 & 0 & 1\\
+	1 & 1 & 1
+\end{tabular}
+\task
+\begin{tabular}{ccc|c}
+	A & B & C & Y\\
+	\hline
+	0&0&0&0\\
+	0&0&1&1\\
+	0&1&0&1\\
+	0&1&1&1\\
+	1&0&0&1\\
+	1&0&1&0\\
+	1&1&0&1\\
+	1&1&1&0
+\end{tabular}
+\task
+\begin{tabular}{ccc|c}
+	A & B & C & Y\\
+	\hline
+	0&0&0&0\\
+	0&0&1&1\\
+	0&1&0&0\\
+	0&1&1&0\\
+	1&0&0&0\\
+	1&0&1&0\\
+	1&1&0&1\\
+	1&1&1&1
+\end{tabular}
+\task
+\begin{tabular}{cccc|c}
+	A & B & C & D & Y\\
+	\hline
+	0&0&0&0&1\\
+	0&0&0&1&0\\
+	0&0&1&0&1\\
+	0&0&1&1&1\\
+	0&1&0&0&0\\
+	0&1&0&1&0\\
+	0&1&1&0&1\\
+	0&1&1&1&1\\
+	1&0&0&0&1\\
+	1&0&0&1&0\\
+	1&0&1&0&1\\
+	1&0&1&1&0\\
+	1&1&0&0&0\\
+	1&1&0&1&0\\
+	1&1&1&0&0\\
+	1&1&1&1&0
+\end{tabular}
+\task
+\begin{tabular}{cccc|c}
+	A & B & C & D & Y\\
+	\hline
+	0&0&0&0&0\\
+	0&0&0&1&0\\
+	0&0&1&0&0\\
+	0&0&1&1&1\\
+	0&1&0&0&0\\
+	0&1&0&1&0\\
+	0&1&1&0&1\\
+	0&1&1&1&1\\
+	1&0&0&0&1\\
+	1&0&0&1&1\\
+	1&0&1&0&1\\
+	1&0&1&1&1\\
+	1&1&0&0&0\\
+	1&1&0&1&0\\
+	1&1&1&0&0\\
+	1&1&1&1&0
+\end{tabular}
+\end{tasks}
+
+\solution
+\begin{enumerate}[label=(\alph*)]
+	\item $Y=\overline{A}B+A\overline{B}+AB$
+	\item $Y=\overline{AB}C+\overline{A}B\overline{C}
+	+\overline{A}BC+A\overline{BC}+AB\overline{C}$
+	\item $Y=\overline{AB}C+AB\overline{C}+ABC$
+	\item $Y=\overline{ABCD}+\overline{AB}C\overline{D}+\overline{AB}CD
+	+\overline{A}BC\overline{D}+\overline{A}BCD+A\overline{BCD}
+	+A\overline{B}C\overline{D}$
+	\item $Y=\overline{AB}CD+\overline{A}BC\overline{D}+\overline{A}BCD
+	+A\overline{BCD}+A\overline{BC}D+A\overline{B}C\overline{D}+A\overline{B}CD$
+\end{enumerate}	
+
+\clearpage
+\exercise %2.3
+Write a Boolean equation in product-of-sums canonical form
+for the truth tables from Exercise 2.1.
+\todo{2.3}
+\solution
+\begin{enumerate}[label=(\alph*)]
+\item $Y=A+\overline{B}$
+\item $Y=(A+B+\overline{C})(A+\overline{B}+C)(A+\overline{B}+\overline{C})
+	(\overline{A}+B+C)(\overline{A}+B+\overline{C})(\overline{A}
+	+\overline{B}+C)$
+\item $Y=(A+B+\overline{C})(A+\overline{B}+\overline{C})(\overline{A}+
+	\overline{B}+C)$
+\item $Y=(A+\overline{B}+C+D)(A+\overline{B}+C+\overline{D})
+	(A+\overline{B}+\overline{C}+D)(A+\overline{B}+\overline{C}+\overline{D})
+	(\overline{A}+B+C+\overline{D})(\overline{A}+B+\overline{C}+\overline{D})
+	($
+\item $Y=$
+\end{enumerate}
+
+\exercise %2.4
+Write a Boolean equation in product-of-sums canonical form
+for the truth tables from Exercise 2.2.
+\todo{2.4}
+\solution
+\begin{enumerate}[label=(\alph*)]
+\item $Y=A+\overline{B}$
+\item $Y=...$	
+\end{enumerate}
+
+\exercise %2.5
+Minimize each of the Boolean equations from Exercise 2.1.
+\solution
+\todo{2.5}
+
+\exercise %2.6
+Minimize each of the Boolean equations from Exercise 2.2.
+\solution
+\todo{2.5}
+
+\exercise %2.7
+Sketch a reasonably simple combinatorial circuit implementing
+each of the functions from Exercise 2.5.
+\solution
+\todo{2.7}
+
+\exercise %2.8
+Sketch a reasonably simple combinatorial circuit implementing
+each of the functions from Exercise 2.6.
+\solution
+\todo{2.8}
+
+\exercise %2.9
+Repeat Exercise 2.7, using only NOT, AND and OR gates.
+\solution
+\todo{2.9}
+
+\exercise %2.10
+Repeat Exercise 2.8, using only NOT, AND and OR gates.
+\solution
+\todo{2.10}
+
+\exercise %2.11
+Repeat Exercise 2.7, using only NOT, NAND and NOR gates.
+\solution
+\todo{2.11}
+
+\exercise %2.12
+Repeat Exercise 2.8, using only NOT, NAND and NOT gates.
+\solution
+\todo{2.12}
+
+
+
+
+
+
+
