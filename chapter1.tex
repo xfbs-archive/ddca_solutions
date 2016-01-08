@@ -369,41 +369,208 @@ binary numbers.
 	\task $845=512-256-64-8-4-1=2^9+2^8+2^6+2^3+2^2+2^0=\mathbf{11\,0100\,1101_2}$
 \end{tasks}
 
-\todo{1.26}
-\todo{1.27}
-\todo{1.28}
-\todo{1.29}
-\todo{1.30}
-\todo{1.30}
-\todo{1.31}
-%\todo{1.32}
-%\todo{1.33}
-%\todo{1.34}
-%\todo{1.35}
-%\todo{1.36}
-%\todo{1.37}
-%\todo{1.38}
-%\todo{1.39}
-%\todo{1.40}
-%\todo{1.41}
-%\todo{1.42}
-%\todo{1.43}
-%\todo{1.44}
-%\todo{1.45}
-%\todo{1.46}
-%\todo{1.47}
-%\todo{1.48}
-%\todo{1.49}
-%\todo{1.50}
-%\todo{1.51}
-%\todo{1.52}
-%\todo{1.53}
-%\todo{1.54}
-%\todo{1.55}
-%\todo{1.56}
-%\todo{1.57}
-%\todo{1.58}
-%\todo{1.59}
+\exercise %1.26
+Convert the following decimal numbers to unsigned binary numbers.
+\begin{tasks}(4)
+	\task $14_{10}$
+	\task $52_{10}$
+	\task $339_{10}$
+	\task $711_{10}$
+\end{tasks}
+
+\exercise %1.27
+Repeat Exercise 1.25, but convert to hexadecimal.
+
+\exercise %1.28
+Repeat Exercise 1.26, but convert to hexadecimal.
+
+\exercise %1.29
+Convert the following decimal numbers to 8-bit two's complement numbers or
+indicate that the decimal number would overflow the range.
+\begin{tasks}(5)
+	\task $42_{10}$
+	\task $-63_{10}$
+	\task $124_{10}$
+	\task $-128_{10}$
+	\task $133_{10}$
+\end{tasks}
+
+\exercise %1.30
+Convert the following decimal numbers to 8-bit two's complement numbers or
+indicate that the decimal number would overflow the range.
+\begin{tasks}(5)
+	\task $24_{10}$
+	\task $-59_{10}$
+	\task $128_{10}$
+	\task $-150_{10}$
+	\task $127_{10}$
+\end{tasks}
+
+\exercise %1.31
+Repeat Exercise 1.29, but convert to 8-bit sign/magnitude numbers.
+
+\exercise %1.32
+Repeat Exercise 1.30, but convert to 8-bit sign/magnitude numbers.
+
+\exercise %1.33
+Convert the following 4-bit two's complement numbers to 8-bit two's complement numbers.
+\begin{tasks}
+	\task $0101_2$
+	\task $1010_2$
+\end{tasks}
+
+\exercise %1.34
+Convert the following 4-bit two's complement numbers to 8-bit two's complement numbers.
+\begin{tasks}
+	\task $0111_2$
+	\task $1000_2$
+\end{tasks}
+
+\exercise %1.35
+Repeat Exercise 1.33 if the numbers are unsigned rather than two's complement
+
+\exercise %1.36
+Repeat Exercise 1.34 if the numbers are unsigned rather than two's complement
+
+\exercise %1.37
+Base 8 is referred to as octal. Convert each of the numbers from Exercise 1.25 to octal.
+
+\exercise %1.38
+Base 8 is referred to as octal. Convert each of the numbers from Exercise 1.26 to octal.
+
+\exercise %1.39
+Convert each of the following octal numbers to binary, hexadecimal, and decimal.
+\begin{tasks}
+	\task $42_8$
+	\task $63_8$
+	\task $255_8$
+	\task $3047_8$
+\end{tasks}
+
+\exercise %1.40
+Convert each of the following octal numbers to binary, hexadecimal, and decimal.
+\begin{tasks}
+	\task $23_8$
+	\task $45_8$
+	\task $371_8$
+	\task $2560_8$
+\end{tasks}
+
+\exercise %1.41
+How many 5-bit two's complement numbers are greater than 0? How many are less than 0?
+How would your answers differ for sign/magnitude numbers?
+
+\exercise %1.42
+How many 7-bit two's complement numbers are greater than 0? How many are less than 0?
+How would your answers differ for sign/magnitude numbers?
+
+\exercise %1.43
+How many bytes are in a 32-bit word? How many nibbles are in the word?
+
+\exercise %1.44
+How many bytes are in a 64-bit word?
+
+\exercise %1.45
+A particular DSL modem operates at 768 kbits/sec. How many bytes can it receive in 1 minute?
+
+\exercise %1.46
+USB 3.0 can send data at 5 Gbits/sec. How many bytes can it send in 1 minute?
+
+\exercise %1.47
+Hard disk manufacturers use the term "megabytes" to mean $10^6$ bytes and "gigabytes" to mean
+$10^9$ bytes. How many real GBs of music can you store on a 50 GB hard disk?
+
+\exercise %1.48
+Estimate the value of $2^31$ without using a calculator.
+
+\exercise %1.49
+A memory on the Pentium 2 microprocessor is organized as a rectangular array of bits with $2^8$
+rows and $2^9$ columns. Estimate how many bits it has without using a calculator.
+
+\exercise %1.50
+Draw a number line analogous to Figure 1.11 for 3-bit unsigned, two's complement,
+and sign/magnitude numbers.
+
+\exercise %1.51
+Draw a number line analogous to Figure 1.11 for 2-bit unsigned, two's complement,
+and sign/magnitude numbers.
+
+\exercise %1.52
+Perform the following additions of unsigned binary numbers. Indicate whether or not the sum
+overflows a 4-bit result.
+\begin{tasks}
+	\task $1001_2 + 0100_2$
+	\task $1101_2 + 1011_2$
+\end{tasks}
+
+\exercise %1.53
+Perform the following additions of unsigned binary numbers. Indicate whether or not the sum
+overflows a 8-bit result.
+\begin{tasks}
+	\task $10011001_2 + 01000100_2$
+	\task $11010010_2 + 10110110_2$
+\end{tasks}
+
+\exercise %1.54
+Repeat Exercise 1.52, assuming that the binary numbers are in two's complement form.
+
+\exercise %1.55
+Repeat Exercise 1.53, assuming that the binary numbers are in two's complement form.
+
+\exercise %1.56
+Convert the following decimal numbers to 6-bit two's complement binary numbers and add them.
+Indicate whether or not the sum overflows a 6-bit result.
+\begin{tasks}
+	\task $16_{10} + 9_{10}$
+	\task $27_{10} + 31_{10}$
+	\task $-4_{10} + 19_{10}$
+	\task $3_{10} + -32_{10}$
+	\task $-16_{10} + -9_{10}$
+	\task $-27_{10} + -31_{10}$
+\end{tasks}
+
+\exercise %1.57
+Repeat Exercise 1.56 for the following numbers.
+\begin{tasks}
+	\task $7_{10} + 13_{10}$
+	\task $17_{10} + 25_{10}$
+	\task $-26_{10} + 8_{10}$
+	\task $31_{10} + -14_{10}$
+	\task $-19_{10} + -22_{10}$
+	\task $-2_{10} + -29_{10}$
+\end{tasks}
+
+\exercise %1.58
+Perform the following additions of unsigned hexadecimal numbers. Indicate whether or not the
+sum overflows an 8-bit (two hex digit) result.
+\begin{tasks}
+	\task $7_{16} + 9_{16}$
+	\task $13_{16} + 28_{16}$
+	\task $AB_{16} + 3E_{16}$
+	\task $8F_{16} + AD_{16}$
+\end{tasks}
+
+\exercise %1.59
+Perform the following additions of unsigned hexadecimal numbers. Indicate whether or not the
+sum overflows an 8-bit (two hex digit) result.
+\begin{tasks}
+	\task $22_{16} + 8_{16}$
+	\task $73_{16} + 2C_{16}$
+	\task $7F_{16} + 7F_{16}$
+	\task $C2_{16} + A4_{16}$
+\end{tasks}
+
+\exercise %1.60
+Convert the following decimal numbers to 5-bit two's complement binary numbers and subtract them.
+Indicate whether or not the difference overflows a 5-bit result.
+\begin{tasks}
+	\task $9_{10} - 7_{10}$
+	\task $12_{10} - 15_{10}$
+	\task $-6_{10} - 11_{10}$
+	\task $4_{10} - - 8_{10}$
+\end{tasks}
+
+
 %\todo{1.60}
 %\todo{1.61}
 %\todo{1.62}
